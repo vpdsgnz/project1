@@ -1,0 +1,65 @@
+body {
+    background-color: #25282c;
+    color: rgb(196, 196, 196);
+    margin-bottom: 80px;
+}
+
+h1 {
+    color: #f44336;
+
+}
+
+#matches {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+select {
+    width: 200px;
+}
+
+.main {
+    /* background-color: #2F3338; */
+    padding: 40px 0px;
+}
+.mdl-tabs__tab-bar {
+    border-bottom: none;
+}
+.mdl-tabs__tab-bar a {
+    text-decoration: none;
+    color: #62727b;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.mdl-tabs__tab-bar a:hover {
+    color: white;
+}
+
+.mdl-textfield__label {
+    color: #62727b;
+    
+}
+
+.mdl-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.form-group {
+    color: #62727b;
+}
+
+.form-control {
+    background-color: #2F3338;
+    border: 1px solid #62727b;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    color: #62727b;
+    background-color: #2F3338;
+}
