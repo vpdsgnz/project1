@@ -1,12 +1,29 @@
 body {
     background-color: #25282c;
     color: rgb(196, 196, 196);
-    margin-bottom: 80px;
 }
 
 h1 {
     color: #f44336;
+}
 
+h4 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+h6 {
+    display: inline-block;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+p {
+    margin: 5px;
+}
+
+.col-10 {
+    padding: 0px;
 }
 
 #matches {
@@ -20,7 +37,7 @@ select {
 
 .main {
     /* background-color: #2F3338; */
-    padding: 40px 0px;
+    margin-bottom: 80px;
 }
 .mdl-tabs__tab-bar {
     border-bottom: none;
@@ -36,23 +53,86 @@ select {
     color: white;
 }
 
+.mdl-textfield__input {
+    color: white;
+}
+
 .mdl-textfield__label {
     color: #62727b;
-    
 }
 
 .mdl-button {
     background-color: #f44336;
     color: white;
+    margin: 20px 0px;
 }
 
 .form-group {
     color: #62727b;
+    margin: 0px;
 }
 
 .form-control {
     background-color: #2F3338;
     border: 1px solid #62727b;
+}
+
+.custom-select {
+    color: #62727b;
+    background-color: #2F3338;
+    border: 1px solid #62727b;
+}
+
+select.custom-select {
+    color: white;
+}
+
+.mdl-list__item {
+    padding: 5px 0px;
+    color: white;
+    border-bottom: 1px solid #62727b;
+}
+
+.mdl-list__item:last-child {
+    padding: 5px 0px;
+    color: white;
+    border: none;
+}
+
+i {
+    color: #62727b;
+    padding-right: 10px;
+}
+
+.material-icons {
+    color: #62727b;
+}
+
+.mdl-list__item .mdl-list__item-primary-content .mdl-list__item-icon {
+    margin-right: 15px;
+    color: #62727b;
+}
+
+.poke-list:hover {
+    background-color: #62727b;
+    transition: 0.4s;
+    padding: 0px 10px;
+}
+
+aside {
+    float: right;
+}
+
+.poke-sprite {
+    width: 150px;
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+.stat-text {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: .04em;
 }
 
 .footer {

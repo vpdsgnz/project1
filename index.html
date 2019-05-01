@@ -29,13 +29,13 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row col-10 mx-auto">
+    <div class="container col-12 col-md-10">
+        <div class="row mx-auto">
             <h1>PokéTourney</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ornare lectus, 
                 vel egestas urna. Nunc mi enim, iaculis et magna et, aliquet dapibus velit. Fusce tincidunt ante erat.</p>
         </div>
-        <div class ="row col-10 mx-auto">
+        <div class ="row mx-auto">
             <!-- Tabs -->
             <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
                 <div class="mdl-tabs__tab-bar">
@@ -54,35 +54,61 @@
                 </div>
                 <div class="mdl-tabs__panel" id="tab2">
                     <!-- Participants -->
-                    <section class="main">
-                        <div class="col-6">
-                            <form action="#">
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" id="sample3">
-                                    <label class="mdl-textfield__label" for="sample3">Player's Name</label>
-                                </div>
-                                <div class="form-group row">
-                                    <select class="custom-select">
-                                        <option selected>Select your Pokémon:</option>
-                                        <option value="1">Bulbasaur</option>
-                                        <option value="2">Squirtle</option>
-                                        <option value="3">Charmander</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="form-group row">
+                    <section class="main col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
+                        <h4>Join the fight</h4>
+                        <p>Enter your name, choose your Pokémon and let the battle begin!</p>
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="sample3">
+                                <label class="mdl-textfield__label" for="sample3">Player's Name</label>
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select">
+                                    <option selected>Select your Pokémon:</option>
+                                    <option value="1">Bulbasaur</option>
+                                    <option value="2">Squirtle</option>
+                                    <option value="3">Charmander</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="form-group">
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-                                Add Player
+                                Join
                             </button>
                         </div>
                     </section>  
                 </div>
                 <div class="mdl-tabs__panel" id="tab3">
                     <!-- Pokemon -->
-                    <section class="main">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </section>
+                    <div class="row justify-content-md-center">
+                        <section class="main col-6">
+                            <ul class="mdl-list">
+                                <li class="mdl-list__item poke-list">
+                                    <span class="mdl-list__item-primary-content">
+                                    <i>1.</i> Bulbasaur
+                                </span>
+                                </li>
+                                <li class="mdl-list__item poke-list">
+                                    <span class="mdl-list__item-primary-content">
+                                    <i>2.</i> Ivysaur
+                                </span>
+                                </li>
+                                <li class="mdl-list__item poke-list">
+                                    <span class="mdl-list__item-primary-content">
+                                    <i>3.</i> Venusaur
+                                </span>
+                                </li>
+                            </ul>
+                        </section>
+                        <aside class="main col-3">
+                            <h4>Pokemon Name</h4>
+                            <img class="poke-sprite" src="https://www.pinclipart.com/picdir/middle/170-1703915_pokemon-leaf-green-ice-bird-ho-oh-sprite.png" alt="Pokemon - Ho Oh Sprite Png"><br>
+                            <h6>HP:</h6><span class="stat-text">20</span><br>
+                            <h6>Attack:</h6><span class="stat-text">20</span><br>
+                            <h6>Defense:</h6><span class="stat-text">20</span><br>
+                            <h6>Speed:</h6><span class="stat-text">20</span>
+                        </aside>
+                    </div>
                 </div>
             </div>
         </div>
