@@ -5,48 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>brackets test</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="src/jquery.bracket.js"></script>
-    <script type="text/javascript" src="src/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="src/jquery.bracket.css" />
-    <link rel="stylesheet" type="text/css" href="src/main.css" />
+    <title>Brackets</title>
 
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/jquery.bracket.js"></script>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/material.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.bracket.css"/>
 </head>
 
 <body>
-    <div id="matches">
-        <div class="demo"></div>
+    <div class="container">
+        <div class="row col-10 mx-auto">
+            <h1>PokéTourney</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ornare lectus, 
+                vel egestas urna. Nunc mi enim, iaculis et magna et, aliquet dapibus velit. Fusce tincidunt ante erat.</p>
+        </div>
+        <div class ="row col-10 mx-auto">
+            <!-- Tabs -->
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div class="mdl-tabs__tab-bar">
+                    <a href="#tab1" class="mdl-tabs__tab is-active">Brackets</a>
+                    <a href="#tab2" class="mdl-tabs__tab">Participants</a>
+                    <a href="#tab3" class="mdl-tabs__tab">Pokémon</a>
+                </div>
+                <!-- Tab Content -->
+                <div class="mdl-tabs__panel is-active" id="tab1">
+                    <!-- Brackets -->
+                    <section class="main">
+                        <div id="matches">
+                            <div class="demo"></div>
+                        </div>
+                    </section>  
+                </div>
+                <div class="mdl-tabs__panel" id="tab2">
+                    <!-- Participants -->
+                    <section class="main">
+                        <div class="col-6">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="sample3">
+                                    <label class="mdl-textfield__label" for="sample3">Player's Name</label>
+                                </div>
+                                <div class="form-group row">
+                                    <select class="custom-select">
+                                        <option selected>Select your Pokémon:</option>
+                                        <option value="1">Bulbasaur</option>
+                                        <option value="2">Squirtle</option>
+                                        <option value="3">Charmander</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form-group row">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                                Add Player
+                            </button>
+                        </div>
+                    </section>  
+                </div>
+                <div class="mdl-tabs__panel" id="tab3">
+                    <!-- Pokemon -->
+                    <section class="main">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        function shuffle(array) {
-            var currentIndex = array.length,
-                temporaryValue, randomIndex;
-
-            // While there remain elements to shuffle...
-            while (0 !== currentIndex) {
-
-                // Pick a remaining element...
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex -= 1;
-
-                // And swap it with the current element.
-                temporaryValue = array[currentIndex];
-                array[currentIndex] = array[randomIndex];
-                array[randomIndex] = temporaryValue;
-            }
-
-            return array;
-        }
-
-
-        var arar = [0, 1, 2, 3, 4, 5];
-        console.log(shuffle(arar));
-    </script>
-
-
-
+    <footer class="footer">
+        <div class="container text-center">© 2019 Copyright</div>
+    </footer>
 </body>
 
 </html>
