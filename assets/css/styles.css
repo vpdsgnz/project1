@@ -28,7 +28,7 @@ p {
 
 #matches {
     overflow-y: scroll;
-    height: 300px;
+    height: 400px;
 }
 
 select {
@@ -41,6 +41,7 @@ select {
 }
 .mdl-tabs__tab-bar {
     border-bottom: none;
+    margin-bottom: 20px;
 }
 .mdl-tabs__tab-bar a {
     text-decoration: none;
@@ -142,4 +143,61 @@ aside {
     line-height: 60px;
     color: #62727b;
     background-color: #2F3338;
+    border-top: 4px solid  #f44336;
+    z-index: 1;
+}
+
+
+/* BRACKETS */
+
+#matches {
+    padding-top: 30px;
+}
+
+.team {
+    height: 40px;
+    width: 150px !important;
+    color: #62727b;
+    background-color: #2F3338 !important;
+    border: 1px solid #62727b;
+    color: white !important;
+}
+
+.label {
+    overflow: visible !important;
+    width: 120px !important;
+    padding: 8px 0px 8px 8px !important;
+    height: 40px !important;
+}
+
+.round {
+    margin-right: 60px !important;
+}
+
+.tools {
+    /* background-color: #f44336 !important; */
+}
+
+.increment {
+    background-color: #f44336 !important;
+    
+}
+
+.decrement {
+    background-color: #f44336 !important;
+}
+
+/* .zerofit {
+    height: 50px;
+} */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
