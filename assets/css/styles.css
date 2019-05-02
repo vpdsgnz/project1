@@ -28,7 +28,8 @@ p {
 
 #matches {
     overflow-y: scroll;
-    height: 400px;
+    height: 450px;
+    clear: both;
 }
 
 select {
@@ -39,10 +40,12 @@ select {
     /* background-color: #2F3338; */
     margin-bottom: 80px;
 }
+
 .mdl-tabs__tab-bar {
     border-bottom: none;
     margin-bottom: 20px;
 }
+
 .mdl-tabs__tab-bar a {
     text-decoration: none;
     color: #62727b;
