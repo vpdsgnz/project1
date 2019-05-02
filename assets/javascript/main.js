@@ -58,7 +58,7 @@ $(function() {
         teamHeight: 600,
         scoreHeight: 600,
         matchMargin: 10,
-        roundMargin: 50,
+        roundMargin: 60,
         init: customData,
         decorator: {
             edit: edit_fn,
