@@ -151,7 +151,7 @@
           // console.log(pokelist);
 
       });
-=======
+
 /* Custom data objects passed as teams */
 var customData = {
     teams: [
