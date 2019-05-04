@@ -1,15 +1,32 @@
 body {
     background-color: #25282c;
     color: rgb(196, 196, 196);
+    background: rgb(31,32,33);
+    background: linear-gradient(180deg, rgba(31,32,33,1) 0%, rgba(37,40,44,1) 30%);
+}
+
+.intro {
+    margin-bottom: 20px;
 }
 
 h1 {
     color: #f44336;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 5px;
 }
 
 h4 {
     color: white;
+    margin-top: 0px;
     margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
 h6 {
@@ -19,7 +36,7 @@ h6 {
 }
 
 p {
-    margin: 5px;
+    margin: 0px;
 }
 
 .col-10 {
@@ -28,8 +45,9 @@ p {
 
 #matches {
     overflow-y: scroll;
-    height: 450px;
+    height: 400px;
     clear: both;
+    padding-top: 30px;
 }
 
 select {
@@ -76,21 +94,6 @@ select {
     margin: 0px;
 }
 
-.form-control {
-    background-color: #2F3338;
-    border: 1px solid #62727b;
-}
-
-.custom-select {
-    color: #62727b;
-    background-color: #2F3338;
-    border: 1px solid #62727b;
-}
-
-select.custom-select {
-    color: white;
-}
-
 .mdl-list__item {
     padding: 5px 0px;
     color: white;
@@ -117,12 +120,28 @@ i {
     color: #62727b;
 }
 
+.mdl-textfield__label {
+    color: rgb(196, 196, 196);
+}
+
+.mdl-textfield__input {
+    border-bottom: 1px solid #f44336;
+}
+
+.mdl-textfield__label:after {
+    background-color: #f44336;
+}
+
 /* Pokemon Stat Tab */
 
 #stat-tab {
     overflow-y: scroll;
     height: 320px;
     clear: both;
+}
+
+.poke-list {
+    text-transform: capitalize;
 }
 
 .poke-list:hover {
@@ -136,9 +155,8 @@ aside {
 }
 
 .poke-sprite {
-    width: 150px;
-    height: 150px;
-    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .stat-text {
@@ -151,19 +169,15 @@ aside {
     position: fixed;
     bottom: 0;
     width: 100%;
-    line-height: 60px;
+    line-height: 50px;
     color: #62727b;
     background-color: #2F3338;
-    border-top: 4px solid  #f44336;
+    border-top: 3px solid  #f44336;
     z-index: 1;
 }
 
 
 /* BRACKETS */
-
-#matches {
-    padding-top: 30px;
-}
 
 .tools {
     display: none;
@@ -172,6 +186,14 @@ aside {
 .demo {
     position: relative;
     left: -35px;
+}
+
+div.jQBracket .team.highlight {
+    background-color: #f44336 !important;
+}
+
+div.jQBracket .connector.highlight {
+    border-color: #f44336 !important;
 }
 
 ::-webkit-scrollbar {
@@ -183,4 +205,43 @@ aside {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.highlightLoser {
+
+}
+/* Select2 */
+
+.select2-container--material .select2-results__option {
+    text-transform: capitalize;
+}
+
+.select2-container--material .select2-selection {
+    text-transform: capitalize;
+    color: rgb(196, 196, 196);
+    border-bottom: 1px solid #f44336;
+}
+
+/* Dialog */
+
+.mdl-dialog {
+    background-color: #2F3338;
+}
+
+.mdl-dialog__content {
+    color: rgb(196, 196, 196);
+}
+
+.close {
+    background-color: #f44336 !important;
+    color: white;
+    padding: 0px 10px !important;
+    opacity: 1 !important;
+}
+
+.close:hover {
+    background-color: #62727b !important;
+    color: white;
+    padding: 0px 10px !important;
+    opacity: 1 !important;
 }

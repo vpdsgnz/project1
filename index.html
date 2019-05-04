@@ -12,7 +12,6 @@
     <script type="text/javascript" src="assets/javascript/jquery.bracket.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
 
-
     <!-- CSS Reset -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 
@@ -29,8 +28,6 @@
     <link rel="stylesheet" href="assets/css/material.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-
-
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.bracket.css" />
@@ -43,15 +40,23 @@
 <body>
     <div class="container col-12 col-md-10">
         <div class="row mx-auto">
-            <h1>PokéTournéy</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ornare lectus, vel egestas urna. Nunc mi enim, iaculis et magna et, aliquet dapibus velit. Fusce tincidunt ante erat.</p>
+            <div class="intro">
+                <h1>PokéTournéy</h1>
+                <p>
+                    Welcome to PokéTourney, where players can become Pokémon Trainers, 
+                    choose their Pokémon, battle through the brackets and become the new Champion! 
+                    Before the tournament begins, make sure to register you and your companion in 
+                    “Trainers” tab. You can also study up on which Pokémon to choose before entering 
+                    in the “Pokémon” tab.     
+                </p>
+            </div>
         </div>
         <div class="row mx-auto">
             <!-- Tabs -->
             <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
                 <div class="mdl-tabs__tab-bar">
                     <a href="#tab1" class="mdl-tabs__tab is-active">Brackets</a>
-                    <a href="#tab2" class="mdl-tabs__tab">Participants</a>
+                    <a href="#tab2" class="mdl-tabs__tab">Trainers</a>
                     <a href="#tab3" class="mdl-tabs__tab">Pokémon</a>
                 </div>
                 <!-- Tab Content -->
@@ -66,7 +71,7 @@
                 <div class="mdl-tabs__panel" id="tab2">
                     <!-- Participants -->
                     <section class="main col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
-                        <h4>Join the fight</h4>
+                        <h3>Become a Trainer</h3>
                         <p>Enter your name, choose your Pokémon and let the battle begin!</p>
                         <form action="#">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -74,7 +79,7 @@
                                 <label class="mdl-textfield__label" for="sample3">Player's Name</label>
                             </div>
                             <div class="form-group">
-                                <select id="pokesel0" class="custom-select">
+                                <select id="pokesel0">
                                     <option selected>Select your Pokémon:</option>
                                 </select>
                             </div>
@@ -84,6 +89,16 @@
                                 Join
                             </button>
                         </div>
+                        <!-- <button id="show-dialog" type="button" class="mdl-button">Show Dialog</button>
+                        <dialog class="mdl-dialog">
+                            <h3 class="mdl-dialog__title">Don't you want to be the very best?</h3>
+                            <div class="mdl-dialog__content">
+                            <p>How can you continue without choosing a Pokémon? Pick a partner and join the battle!</p>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                            <button type="button" class="mdl-button close">Close</button>
+                            </div>
+                        </dialog> -->
                     </section>
                 </div>
                 <div class="mdl-tabs__panel" id="tab3">
@@ -94,11 +109,11 @@
                             </ul>
                         </section>
                         <aside class="main col-3">
-                            <h4>Pokemon Name</h4>
-                            <img class="poke-sprite" src="assets/images/pokemon_PNG148.png" alt="Pokemon - Pickachu"><br>
-                            <h6>Attack:</h6><span class="stat-text">0</span><br>
-                            <h6>Defense:</h6><span class="stat-text">0</span><br>
-                            <h6>Stamina:</h6><span class="stat-text">0</span>
+                            <h4>Who's that Pokémon?</h4>
+                            <img class="poke-sprite" src="assets/images/wtp-pikachu.png" alt="Pokemon - Pickachu"><br>
+                            <h6>Attack:</h6><span class="stat-text">??</span><br>
+                            <h6>Defense:</h6><span class="stat-text">??</span><br>
+                            <h6>Stamina:</h6><span class="stat-text">??</span>
                         </aside>
                     </div>
                 </div>

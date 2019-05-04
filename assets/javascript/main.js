@@ -10,7 +10,7 @@ var config = {
 firebase.initializeApp(config);
 
     // Create a variable to reference the database.
-    // var database = firebase.database();
+    var database = firebase.database();
 
 
 
@@ -145,15 +145,6 @@ $.ajax({
 });
 
 
-var querystats = "https://nanofuxion.github.io/pokemon-stats-api/api/data/";
-$.ajax({
-    url: querystats,
-    method: "GET"
-}).then(function(response) {
-    testvar = response;
-});
-
-
 $(document).ready(function() {
 
     ////select a pokemon to enter the tourney////
@@ -167,16 +158,31 @@ $(document).ready(function() {
         }
     }
 
-    $("#add-user").on("click", function(event) {
+
+    //
+    $("#joinbtn").on("click", function(event) {
         event.preventDefault();
+
+        database.ref().push({
+            customData: customData,
+            dateAdded: firebase.database.ServerValue.TIMESTAMP
+          });
+    
   
 
     });
 
 
+    var querystats = "https://nanofuxion.github.io/pokemon-stats-api/api/data/";
+    $.ajax({
+        url: querystats,
+        method: "GET"
+    }).then(function(response0) {
+        testvar = response0;
+
 
     ////view pokemon stats////
-    $('li.poke-list').click(statfunc);
+    $('li.poke-list, li.mdl-list__item').click(statfunc);
 
     function statfunc() {
         var current = $(this);
@@ -184,15 +190,15 @@ $(document).ready(function() {
         $('.poke-sprite').attr({"src": spriteStr});
         $("aside h4").html(current.attr("data-name"));
         var tempholder;
-        tempholder = $("aside.main").find("span");
+        tempholder = $(".stat-text");
         tempholder.html(testvar[current.attr("data-pokeid") - 1]["base-stats"]["defense"]);
-        tempholder = $("aside.main").find("span:first");
+        tempholder = $(".stat-text:first");
         tempholder.html(testvar[current.attr("data-pokeid") - 1]["base-stats"]["attack"]);
-        tempholder = $("aside.main").find("span:last");
+        tempholder = $(".stat-text:last");
         tempholder.html(testvar[current.attr("data-pokeid") - 1]["base-stats"]["stamina"]);
     }
     //set to pikachu by default
    //$("#tab3").click($("#stat-list li:nth-child(25)").trigger("click"));
-
+});
 
 });

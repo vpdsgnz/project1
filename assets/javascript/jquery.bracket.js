@@ -1467,7 +1467,7 @@ var __extends = (this && this.__extends) || (function () {
             assertNumber(opts, "roundMargin");
             assertNumber(opts, "matchMargin");
             if (!opts.hasOwnProperty("teamWidth")) {
-                opts.teamWidth = 70;
+                opts.teamWidth = 100;
             }
             if (!opts.hasOwnProperty("scoreWidth")) {
                 opts.scoreWidth = 30;
