@@ -28,7 +28,8 @@ p {
 
 #matches {
     overflow-y: scroll;
-    height: 400px;
+    height: 450px;
+    clear: both;
 }
 
 select {
@@ -39,10 +40,12 @@ select {
     /* background-color: #2F3338; */
     margin-bottom: 80px;
 }
+
 .mdl-tabs__tab-bar {
     border-bottom: none;
     margin-bottom: 20px;
 }
+
 .mdl-tabs__tab-bar a {
     text-decoration: none;
     color: #62727b;
@@ -114,6 +117,14 @@ i {
     color: #62727b;
 }
 
+/* Pokemon Stat Tab */
+
+#stat-tab {
+    overflow-y: scroll;
+    height: 320px;
+    clear: both;
+}
+
 .poke-list:hover {
     background-color: #62727b;
     transition: 0.4s;
@@ -154,42 +165,14 @@ aside {
     padding-top: 30px;
 }
 
-.team {
-    height: 40px;
-    width: 150px !important;
-    color: #62727b;
-    background-color: #2F3338 !important;
-    border: 1px solid #62727b;
-    color: white !important;
-}
-
-.label {
-    overflow: visible !important;
-    width: 120px !important;
-    padding: 8px 0px 8px 8px !important;
-    height: 40px !important;
-}
-
-.round {
-    margin-right: 60px !important;
-}
-
 .tools {
-    /* background-color: #f44336 !important; */
+    display: none;
 }
 
-.increment {
-    background-color: #f44336 !important;
-    
+.demo {
+    position: relative;
+    left: -35px;
 }
-
-.decrement {
-    background-color: #f44336 !important;
-}
-
-/* .zerofit {
-    height: 50px;
-} */
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;
