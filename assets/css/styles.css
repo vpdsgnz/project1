@@ -27,12 +27,15 @@ h4 {
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 2px;
+    border-bottom: 1px solid #f44336;
+    margin-bottom: 10px;
 }
 
 h6 {
     display: inline-block;
     padding-right: 10px;
     margin: 0px;
+    color: #f44336;
 }
 
 p {
