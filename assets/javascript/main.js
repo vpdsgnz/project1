@@ -9,11 +9,6 @@ var config = {
 };
 firebase.initializeApp(config);
 
-    // Create a variable to reference the database.
-    // var database = firebase.database();
-
-
-
 /* Custom data objects passed as teams */
 var customData = {
     teams: [
@@ -107,6 +102,7 @@ $(function() {
 
 
 
+
 // get pokemon names and pokeid
 var queryURL = "https://pokeapi.co/api/v2/pokedex/2/";
 var testvar;
@@ -143,7 +139,6 @@ $.ajax({
         .html("arrow_drop_down");
 
 });
-
 
 var querystats = "https://nanofuxion.github.io/pokemon-stats-api/api/data/";
 $.ajax({
@@ -193,6 +188,4 @@ $(document).ready(function() {
     }
     //set to pikachu by default
    //$("#tab3").click($("#stat-list li:nth-child(25)").trigger("click"));
-
-
 });
