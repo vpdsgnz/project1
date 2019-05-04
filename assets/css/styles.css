@@ -122,6 +122,7 @@ i {
     color: #62727b;
 }
 
+<<<<<<< HEAD
 .mdl-textfield__label {
     color: rgb(196, 196, 196);
 }
@@ -146,6 +147,8 @@ i {
     text-transform: capitalize;
 }
 
+=======
+>>>>>>> origin/master
 .poke-list:hover {
     background-color: #62727b;
     transition: 0.4s;
@@ -181,15 +184,47 @@ aside {
 
 /* BRACKETS */
 
+<<<<<<< HEAD
+=======
+#matches {
+    padding-top: 30px;
+}
+
+.team {
+    height: 40px;
+    width: 150px !important;
+    color: #62727b;
+    background-color: #2F3338 !important;
+    border: 1px solid #62727b;
+    color: white !important;
+}
+
+.label {
+    overflow: visible !important;
+    width: 120px !important;
+    padding: 8px 0px 8px 8px !important;
+    height: 40px !important;
+}
+
+.round {
+    margin-right: 60px !important;
+}
+
+>>>>>>> origin/master
 .tools {
-    display: none;
+    /* background-color: #f44336 !important; */
 }
 
-.demo {
-    position: relative;
-    left: -35px;
+.increment {
+    background-color: #f44336 !important;
+    
 }
 
+.decrement {
+    background-color: #f44336 !important;
+}
+
+<<<<<<< HEAD
 div.jQBracket .team.highlight {
     background-color: #f44336 !important;
 }
@@ -197,6 +232,11 @@ div.jQBracket .team.highlight {
 div.jQBracket .connector.highlight {
     border-color: #f44336 !important;
 }
+=======
+/* .zerofit {
+    height: 50px;
+} */
+>>>>>>> origin/master
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;

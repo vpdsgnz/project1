@@ -9,8 +9,11 @@ var config = {
 };
 firebase.initializeApp(config);
 
+<<<<<<< HEAD
     // Create a variable to reference the database.
     var database = firebase.database();
+=======
+>>>>>>> origin/master
 
 /* Custom data objects passed as teams */
 var customData = {
@@ -103,7 +106,13 @@ $(function() {
     })
 })
 
+<<<<<<< HEAD
 // get pokemon names and pokeid
+=======
+
+
+// get pokemon names
+>>>>>>> origin/master
 var queryURL = "https://pokeapi.co/api/v2/pokedex/2/";
 var testvar;
 var pokelist = {};
@@ -112,23 +121,19 @@ $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function(response) {
+    //console.log(response);
+    testvar = response;
+    //var array = [] = response.pokemon_entries;
+
 
     for (let i = 0; i < 150 + 1; i++) {
+        //const element = array[i];
 
         pokelist[response.pokemon_entries[i].pokemon_species.name] = response.pokemon_entries[i].entry_number;
         var newopt = $("<option>");
         newopt.text(response.pokemon_entries[i].pokemon_species.name);
-        newopt.attr({ "value": pokelist[response.pokemon_entries[i].pokemon_species.name], "data-pokeid": pokelist[response.pokemon_entries[i].pokemon_species.name] });
+        newopt.attr({ "value": pokelist[response.pokemon_entries[i].pokemon_species.name], "data-pokeid": pokelist[i] });
         newopt.appendTo("#pokesel0");
-        //console.log(pokelist[response.pokemon_entries[i].pokemon_species.name]);
-
-        var statlist = {} = $('<li class="mdl-list__item poke-list">');
-        statlist.attr({"data-pokeid": pokelist[response.pokemon_entries[i].pokemon_species.name], "data-name": response.pokemon_entries[i].pokemon_species.name});
-        statlist.span = $('<span class="mdl-list__item-primary-content">');
-        statlist.span.html("<i> " + response.pokemon_entries[i].entry_number + ". </i>" + response.pokemon_entries[i].pokemon_species.name);
-        statlist.append(statlist.span);
-        $("#stat-list").append(statlist);
-
     }
     $("#pokesel0").select2({
         theme: "material"
@@ -140,28 +145,20 @@ $.ajax({
 
 });
 
-var querystats = "https://nanofuxion.github.io/pokemon-stats-api/api/data/";
-$.ajax({
-    url: querystats,
-    method: "GET"
-}).then(function(response) {
-    testvar = response;
-});
-
-
 $(document).ready(function() {
 
-    ////select a pokemon to enter the tourney////
     $("#pokesel0").change(pickedpoke);
 
     function pickedpoke() {
-        if ($(this).val() != 'Select your Pokémon:') {
-            console.log($(this).val());
+        if ($("#pokesel0").val() != 'Select your Pokémon:') {
+            console.log($("#pokesel0").val())
         } else {
-            //prompt to select a pokemon
+            //DoSomethingElse();
         }
     }
+    // console.log(pokelist);
 
+<<<<<<< HEAD
 
     //
     $("#joinbtn").on("click", function(event) {
@@ -206,4 +203,6 @@ $(document).ready(function() {
 
 });
 
+=======
+>>>>>>> origin/master
 });
